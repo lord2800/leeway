@@ -1,0 +1,16 @@
+<phpunit backupGlobals="false" bootstrap="./vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-text" target="php://stdout" />
+        <log type="coverage-html" target="build/coverage" />
+    </logging>
+</phpunit>
